@@ -27,5 +27,6 @@ $(IMG) : $(JAR)
 		--name HelloWorld \
 		--type $(TYPE) \
 		--input . \
+		--jlink-options "--compress=2" \
 		--main-class hello.Main \
 		--main-jar $(JAR)
